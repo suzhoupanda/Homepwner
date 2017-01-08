@@ -10,6 +10,9 @@ import UIKit
 
 class ItemsViewController: UITableViewController{
     
+    var itemStore: ItemStore!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
