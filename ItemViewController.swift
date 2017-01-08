@@ -42,4 +42,25 @@ class ItemsViewController: UITableViewController{
         
         return cell
     }
+    
+    @IBAction func toggleEditingMode(sender: AnyObject){
+        if self.isEditing{
+            sender.setTitle("Edit", for: .normal)
+            self.setEditing(false, animated: true)
+        }else{
+            sender.setTitle("Done", for: .normal)
+            self.setEditing(true, animated: true)
+        }
+    }
+    
+    @IBAction func addItem(sender: AnyObject){
+        
+        let newItem = itemStore.createItem()
+        if let index = itemStore.allItems.index(of: newItem){
+            let indexPath = NSIndexPath(row: index, section: 0)
+            tableView.insertRows(at: [indexPath as! IndexPath], with: .automatic)
+
+        }
+        
+    }
 }

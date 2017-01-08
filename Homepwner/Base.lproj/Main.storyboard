@@ -17,9 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="shF-Ju-7YP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-S7-0Tb">
+                                    <rect key="frame" x="38" y="6" width="30" height="30"/>
+                                    <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="toggleEditingModeWithSender:" destination="dWA-dH-2Ah" eventType="touchUpInside" id="bOj-kb-DWO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT7-J2-j4D">
+                                    <rect key="frame" x="300" y="8" width="30" height="30"/>
+                                    <state key="normal" title="Add"/>
+                                    <connections>
+                                        <action selector="addItemWithSender:" destination="dWA-dH-2Ah" eventType="touchUpInside" id="yAs-pN-TAy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="CT7-J2-j4D" firstAttribute="width" secondItem="zyz-S7-0Tb" secondAttribute="width" id="47r-3U-cTy"/>
+                                <constraint firstAttribute="trailing" secondItem="CT7-J2-j4D" secondAttribute="trailing" constant="8" id="Dbs-37-wHA"/>
+                                <constraint firstItem="CT7-J2-j4D" firstAttribute="centerY" secondItem="shF-Ju-7YP" secondAttribute="centerY" id="VTg-Fl-H2d"/>
+                                <constraint firstItem="zyz-S7-0Tb" firstAttribute="leading" secondItem="shF-Ju-7YP" secondAttribute="leading" constant="8" id="gVX-bR-8XK"/>
+                                <constraint firstItem="zyz-S7-0Tb" firstAttribute="centerY" secondItem="shF-Ju-7YP" secondAttribute="centerY" id="xTB-9N-nh2"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="0rN-yn-FMU" detailTextLabel="kI6-03-Bm3" style="IBUITableViewCellStyleValue1" id="LmX-zp-nlz">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LmX-zp-nlz" id="rBV-zr-7cs">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
