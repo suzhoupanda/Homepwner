@@ -20,4 +20,19 @@ class ItemsViewController: UITableViewController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itemStore.allItems.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
+    
+        let item = itemStore.allItems[indexPath.row]
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = "\(item.valueInDollars)"
+        
+        return cell
+    }
 }
