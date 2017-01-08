@@ -33,12 +33,46 @@ class ItemsViewController: UITableViewController{
         return itemStore.allItems.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     
-        let item = itemStore.allItems[indexPath.row]
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "\(item.valueInDollars)"
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = UITableViewCell()
+        
+        var itemsCheap = [Item]()
+        var itemsExpensive = [Item]()
+        var item: Item!
+        
+        for someItem in itemStore.allItems{
+            if someItem.valueInDollars > 50{
+                itemsCheap.append(someItem)
+            }else{
+                itemsExpensive.append(someItem)
+            }
+        }
+        
+        
+        if indexPath.section == 1{
+            cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
+            item = itemsCheap[indexPath.row]
+            cell.textLabel?.text = item.name
+            cell.detailTextLabel?.text = "\(item.valueInDollars)"
+            
+        }else if indexPath.section == 2{
+            cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
+            item = itemsExpensive[indexPath.row]
+            cell.textLabel?.text = item.name
+            cell.detailTextLabel?.text = "\(item.valueInDollars)"
+            
+        }
+        
+    
+        
+       
+        
+        
         
         return cell
     }
