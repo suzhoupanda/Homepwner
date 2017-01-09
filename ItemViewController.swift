@@ -43,6 +43,14 @@ class ItemsViewController: UITableViewController{
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let item = itemStore.allItems[indexPath.row]
+            itemStore.removeItem(item: item)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     @IBAction func toggleEditingMode(sender: AnyObject){
         if self.isEditing{
             sender.setTitle("Edit", for: .normal)
