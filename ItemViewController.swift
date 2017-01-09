@@ -51,6 +51,10 @@ class ItemsViewController: UITableViewController{
         }
     }
     
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        itemStore.moveItemAtIndex(fromIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row)
+    }
+    
     @IBAction func toggleEditingMode(sender: AnyObject){
         if self.isEditing{
             sender.setTitle("Edit", for: .normal)
