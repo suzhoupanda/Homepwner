@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +14,7 @@
         <scene sceneID="QeJ-sm-E2w">
             <objects>
                 <tableViewController id="dWA-dH-2Ah" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="79h-dB-QQR">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" id="79h-dB-QQR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,29 +47,46 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="0rN-yn-FMU" detailTextLabel="kI6-03-Bm3" style="IBUITableViewCellStyleValue1" id="LmX-zp-nlz">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="66" id="LmX-zp-nlz" customClass="ItemCell" customModule="Homepwner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LmX-zp-nlz" id="rBV-zr-7cs">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rN-yn-FMU">
-                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN4-8e-Gjc">
+                                            <rect key="frame" x="26" y="0.0" width="50" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kI6-03-Bm3">
-                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNI-qL-Vwe">
+                                            <rect key="frame" x="311" y="22" width="52" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjX-ex-fk3">
+                                            <rect key="frame" x="24" y="36" width="52" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="XNI-qL-Vwe" secondAttribute="trailing" constant="4" id="DIt-lX-DxV"/>
+                                        <constraint firstItem="XNI-qL-Vwe" firstAttribute="centerY" secondItem="rBV-zr-7cs" secondAttribute="centerY" id="IKF-oD-7rB"/>
+                                        <constraint firstItem="hjX-ex-fk3" firstAttribute="leading" secondItem="XN4-8e-Gjc" secondAttribute="leading" id="JBb-vz-daA"/>
+                                        <constraint firstItem="XN4-8e-Gjc" firstAttribute="top" secondItem="rBV-zr-7cs" secondAttribute="top" id="Mc8-w4-VPm"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hjX-ex-fk3" secondAttribute="bottom" id="uiw-Dt-dJa"/>
+                                        <constraint firstItem="XN4-8e-Gjc" firstAttribute="leading" secondItem="rBV-zr-7cs" secondAttribute="leading" id="wJY-JE-M1H"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="XN4-8e-Gjc" id="ZHj-cg-hca"/>
+                                    <outlet property="serialNumberLabel" destination="hjX-ex-fk3" id="1RC-QZ-fVy"/>
+                                    <outlet property="valueLabel" destination="XNI-qL-Vwe" id="vwF-Kg-bXU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,7 +97,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPl-2T-f3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287" y="42"/>
+            <point key="canvasLocation" x="-281" y="45"/>
         </scene>
     </scenes>
 </document>
