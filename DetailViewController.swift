@@ -30,6 +30,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet var imageView: UIImageView!
+    
+    @IBAction func takePicture(_ sender: UIBarButtonItem) {
+        
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
