@@ -85,15 +85,7 @@ class ItemsViewController: UITableViewController{
         itemStore.moveItemAtIndex(fromIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row)
     }
     
-    @IBAction func toggleEditingMode(sender: AnyObject){
-        if self.isEditing{
-            sender.setTitle("Edit", for: .normal)
-            self.setEditing(false, animated: true)
-        }else{
-            sender.setTitle("Done", for: .normal)
-            self.setEditing(true, animated: true)
-        }
-    }
+
     
     @IBAction func addItem(sender: AnyObject){
         
