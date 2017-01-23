@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let itemStore = ItemStore()
         
-        let itemsController = window!.rootViewController as! ItemsViewController
-        itemsController.itemStore = itemStore
+        let navController = window!.rootViewController as! UINavigationController
+        let itemsController = navController.topViewController as! ItemsViewController
         
         return true
     }
