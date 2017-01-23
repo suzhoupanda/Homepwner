@@ -115,61 +115,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-Qv-dzw">
-                                <rect key="frame" x="16" y="16" width="343" height="631"/>
+                                <rect key="frame" x="16" y="16" width="343" height="587"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gbf-0G-ABq">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="152"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="141"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3c-gi-3CV">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="152"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="141"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Name..." borderStyle="roundedRect" placeholder="Enter Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S0s-Mu-Q2R">
-                                                <rect key="frame" x="53" y="0.0" width="290" height="152"/>
+                                                <rect key="frame" x="53" y="0.0" width="290" height="141"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="fd1-6k-vTb" id="prK-bm-ZTf"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m6Y-AW-wqs">
-                                        <rect key="frame" x="0.0" y="160" width="343" height="151.5"/>
+                                        <rect key="frame" x="0.0" y="149" width="343" height="140.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hov-JS-Q4W">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="151.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="140.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter serial number here..." borderStyle="roundedRect" placeholder="Enter serial number here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhw-D1-6Jc">
-                                                <rect key="frame" x="53" y="0.0" width="290" height="151.5"/>
+                                                <rect key="frame" x="53" y="0.0" width="290" height="140.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="fd1-6k-vTb" id="Pro-n2-9W1"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QOI-id-htj">
-                                        <rect key="frame" x="0.0" y="319.5" width="343" height="152"/>
+                                        <rect key="frame" x="0.0" y="297.5" width="343" height="141"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWd-fq-PBn">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="152"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="141"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter value here..." borderStyle="roundedRect" placeholder="Enter value here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8b-5P-aBZ">
-                                                <rect key="frame" x="53" y="0.0" width="290" height="152"/>
+                                                <rect key="frame" x="53" y="0.0" width="290" height="141"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="fd1-6k-vTb" id="aIp-Mf-Kog"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whN-IO-vP3">
-                                        <rect key="frame" x="0.0" y="479.5" width="343" height="151.5"/>
+                                        <rect key="frame" x="0.0" y="446.5" width="343" height="140.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -198,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKN-WX-VZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="-969.26536731634189"/>
+            <point key="canvasLocation" x="1614" y="-1103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q5E-Nd-Dqg">

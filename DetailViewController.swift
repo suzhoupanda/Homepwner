@@ -10,7 +10,7 @@ import Foundation
 
 import UIKit
 
-class DetailViewController: UIViewController{
+class DetailViewController: UIViewController, UITextFieldDelegate{
     
     var item: Item!
     
@@ -22,6 +22,11 @@ class DetailViewController: UIViewController{
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
