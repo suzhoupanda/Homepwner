@@ -14,6 +14,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
     
     var item: Item!
     
+    @IBAction func backgroundTapped(_ sender: Any) {
+        view.endEditing(true)
+    }
+   
     @IBOutlet weak var nameField: UITextField!
     
     @IBOutlet weak var serialNumberField: UITextField!
@@ -55,6 +59,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        view.endEditing(animated)
         item.name = nameField.text ?? " "
         item.serialNumber = serialNumberField.text
         if let valueText = valueField.text, let value = numberFormatter.number(from: valueText){
