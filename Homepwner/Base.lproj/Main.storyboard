@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Items View Controller-->
+        <!--Homepwner-->
         <scene sceneID="QeJ-sm-E2w">
             <objects>
                 <tableViewController id="dWA-dH-2Ah" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,11 +96,11 @@
                             <outlet property="delegate" destination="dWA-dH-2Ah" id="65Z-OO-bSo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kgU-U2-dd1"/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="kgU-U2-dd1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPl-2T-f3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="-946.77661169415296"/>
+            <point key="canvasLocation" x="676" y="-1078"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Sfd-Dm-Vf2">
@@ -234,7 +234,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ti-YU-kMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183.19999999999999" y="-946.77661169415296"/>
+            <point key="canvasLocation" x="161" y="-944"/>
         </scene>
     </scenes>
 </document>

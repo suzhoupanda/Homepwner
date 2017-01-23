@@ -12,7 +12,11 @@ import UIKit
 
 class DetailViewController: UIViewController, UITextFieldDelegate{
     
-    var item: Item!
+    var item: Item!{
+        didSet{
+            navigationItem.title = item.name
+        }
+    }
     
     @IBAction func backgroundTapped(_ sender: Any) {
         view.endEditing(true)
