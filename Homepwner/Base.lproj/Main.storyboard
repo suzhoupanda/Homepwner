@@ -107,7 +107,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPl-2T-f3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="-1113"/>
+            <point key="canvasLocation" x="410" y="-1133"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Sfd-Dm-Vf2">
@@ -157,7 +157,7 @@
                                                 <rect key="frame" x="53" y="0.0" width="290" height="140.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="fd1-6k-vTb" id="Pro-n2-9W1"/>
                                                 </connections>
@@ -223,7 +223,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1614" y="-1103"/>
+            <point key="canvasLocation" x="1113" y="-1244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q5E-Nd-Dqg">
