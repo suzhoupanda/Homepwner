@@ -96,11 +96,18 @@
                             <outlet property="delegate" destination="dWA-dH-2Ah" id="65Z-OO-bSo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Homepwner" id="kgU-U2-dd1"/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="kgU-U2-dd1">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="AFV-cD-P3w"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gAA-8J-Gbl">
+                            <connections>
+                                <action selector="addItemWithSender:" destination="dWA-dH-2Ah" id="ycq-7b-YgY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPl-2T-f3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="-1078"/>
+            <point key="canvasLocation" x="686" y="-1113"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Sfd-Dm-Vf2">
