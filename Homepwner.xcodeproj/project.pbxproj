@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD0E3ADF1E35C79300559A30 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BD0E3ADF1E35C79300559A30 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		BD11EFA01E2232FE00ACA7D1 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD11EFA31E2232FE00ACA7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD11EFA51E2232FE00ACA7D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 		BD11EF971E2232FE00ACA7D1 = {
 			isa = PBXGroup;
 			children = (
-				BD0E3ADF1E35C79300559A30 /* DetailViewController.swift */,
 				BD11EFA21E2232FE00ACA7D1 /* Homepwner */,
 				BD11EFA11E2232FE00ACA7D1 /* Products */,
 			);
@@ -66,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BD11EFB51E22346600ACA7D1 /* ItemViewController.swift */,
+				BD0E3ADF1E35C79300559A30 /* DetailViewController.swift */,
 				BD11EFA31E2232FE00ACA7D1 /* AppDelegate.swift */,
 				BD11EFA51E2232FE00ACA7D1 /* ViewController.swift */,
 				BD11EFA71E2232FE00ACA7D1 /* Main.storyboard */,

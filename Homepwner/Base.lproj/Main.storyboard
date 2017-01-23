@@ -99,12 +99,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPl-2T-f3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111" y="72"/>
+            <point key="canvasLocation" x="-308" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Sfd-Dm-Vf2">
             <objects>
-                <viewController id="fd1-6k-vTb" sceneMemberID="viewController">
+                <viewController id="fd1-6k-vTb" customClass="DetailViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4L3-m0-y3w"/>
                         <viewControllerLayoutGuide type="bottom" id="JQG-hT-p38"/>
@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-Qv-dzw">
-                                <rect key="frame" x="104" y="163" width="343" height="631"/>
+                                <rect key="frame" x="16" y="16" width="343" height="631"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gbf-0G-ABq">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="152"/>
@@ -188,10 +188,18 @@
                             <constraint firstItem="DEl-Qv-dzw" firstAttribute="top" secondItem="4L3-m0-y3w" secondAttribute="bottom" constant="8" id="zuW-fs-iOA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateField" destination="whN-IO-vP3" id="ZSz-P2-6N3"/>
+                        <outlet property="dateLabel" destination="whN-IO-vP3" id="eoA-g9-6za"/>
+                        <outlet property="nameField" destination="S0s-Mu-Q2R" id="VDW-eU-17O"/>
+                        <outlet property="serialField" destination="lhw-D1-6Jc" id="5s9-z1-6Qi"/>
+                        <outlet property="serialNumberField" destination="lhw-D1-6Jc" id="bbv-8h-zcU"/>
+                        <outlet property="valueField" destination="c8b-5P-aBZ" id="0uz-wy-H6n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKN-WX-VZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="72"/>
+            <point key="canvasLocation" x="-372" y="-895"/>
         </scene>
     </scenes>
 </document>
