@@ -111,5 +111,6 @@ class ItemsViewController: UITableViewController{
                 detailViewController.item = item
                 
             }
+        }
     }
 }
