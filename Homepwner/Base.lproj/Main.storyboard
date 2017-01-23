@@ -189,10 +189,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateField" destination="whN-IO-vP3" id="ZSz-P2-6N3"/>
                         <outlet property="dateLabel" destination="whN-IO-vP3" id="eoA-g9-6za"/>
                         <outlet property="nameField" destination="S0s-Mu-Q2R" id="VDW-eU-17O"/>
-                        <outlet property="serialField" destination="lhw-D1-6Jc" id="5s9-z1-6Qi"/>
                         <outlet property="serialNumberField" destination="lhw-D1-6Jc" id="bbv-8h-zcU"/>
                         <outlet property="valueField" destination="c8b-5P-aBZ" id="0uz-wy-H6n"/>
                     </connections>
